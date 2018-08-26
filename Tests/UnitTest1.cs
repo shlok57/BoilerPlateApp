@@ -8,11 +8,22 @@ namespace Shlok.Tests
 	public class UnitTest1
 	{
 		[TestMethod]
-		[TestCategory("Unit")]
+		[TestCategory(TestCategory.UnitTest)]
+		[Timeout(TestTimeout.Acceptable)]
 		public void FunctionTest()
 		{
 			int value = 5;
 			Assert.AreEqual(value * value, DBProvider.Function(value));
+		}
+
+		[DataTestMethod]
+		[DataRow(5,25)]
+		[DataRow(3,9)]
+		[TestCategory(TestCategory.UnitTest)]
+		[Timeout(TestTimeout.Acceptable)]
+		public void FunctionDataTest(int value, int result)
+		{
+			Assert.AreEqual(result, DBProvider.Function(value));
 		}
 	}
 }
