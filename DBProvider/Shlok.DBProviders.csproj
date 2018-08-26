@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C637A17F-40D4-41D8-8FB2-32165D68C310}</ProjectGuid>
+    <ProjectGuid>{AC411BD7-8A4B-46DC-88AA-55AFAE363243}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DBPrpvider</RootNamespace>
-    <AssemblyName>DBPrpvider</AssemblyName>
+    <RootNamespace>Shlok.DBProviders</RootNamespace>
+    <AssemblyName>DBProvider</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,8 +40,47 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BoilerPlateAppDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoilerPlateAppDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionHelper.cs" />
     <Compile Include="DBProvider.cs" />
+    <Compile Include="DBResource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBResource.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="BoilerPlateAppDBDataSet.xsc">
+      <DependentUpon>BoilerPlateAppDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BoilerPlateAppDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoilerPlateAppDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoilerPlateAppDBDataSet.xss">
+      <DependentUpon>BoilerPlateAppDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DBResource.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DBResource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

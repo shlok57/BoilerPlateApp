@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Shlok.BoilerPlateApp.Properties {
+namespace Shlok.DBProviders {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Shlok.BoilerPlateApp.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class DBResource {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal DBResource() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Shlok.BoilerPlateApp.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Shlok.BoilerPlateApp.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Shlok.DBProviders.DBResource", typeof(DBResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,22 +61,29 @@ namespace Shlok.BoilerPlateApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to AddParam.
         /// </summary>
-        internal static System.Drawing.Bitmap if_poo_56056 {
+        internal static string AddParam {
             get {
-                object obj = ResourceManager.GetObject("if_poo_56056", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("AddParam", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        ///   Looks up a localized string similar to GetLatestParamValues.
         /// </summary>
-        internal static System.Drawing.Bitmap poop {
+        internal static string GetLatestParamValues {
             get {
-                object obj = ResourceManager.GetObject("poop", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
+                return ResourceManager.GetString("GetLatestParamValues", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GetParamValueById.
+        /// </summary>
+        internal static string GetParamValueById {
+            get {
+                return ResourceManager.GetString("GetParamValueById", resourceCulture);
             }
         }
     }

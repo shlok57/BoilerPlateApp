@@ -34,6 +34,7 @@
 			this.txt_paramName = new System.Windows.Forms.TextBox();
 			this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
 			this.btn_AddParamName = new System.Windows.Forms.Button();
+			this.txt_conf = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -66,6 +67,7 @@
 			this.txt_paramName.Name = "txt_paramName";
 			this.txt_paramName.Size = new System.Drawing.Size(251, 25);
 			this.txt_paramName.TabIndex = 2;
+			this.txt_paramName.TextChanged += new System.EventHandler(this.Txt_paramName_TextChanged);
 			// 
 			// contextMenuStrip1
 			// 
@@ -75,20 +77,32 @@
 			// btn_AddParamName
 			// 
 			this.btn_AddParamName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+			this.btn_AddParamName.Enabled = false;
 			this.btn_AddParamName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btn_AddParamName.Location = new System.Drawing.Point(299, 135);
+			this.btn_AddParamName.Location = new System.Drawing.Point(299, 137);
 			this.btn_AddParamName.Name = "btn_AddParamName";
 			this.btn_AddParamName.Size = new System.Drawing.Size(251, 23);
 			this.btn_AddParamName.TabIndex = 4;
 			this.btn_AddParamName.Text = "Add Parameter";
 			this.btn_AddParamName.UseVisualStyleBackColor = false;
-			this.btn_AddParamName.Click += new System.EventHandler(this.btn_AddParamName_Click);
+			this.btn_AddParamName.Click += new System.EventHandler(this.Btn_AddParamName_Click);
+			// 
+			// txt_conf
+			// 
+			this.txt_conf.AutoSize = true;
+			this.txt_conf.Font = new System.Drawing.Font("Kristen ITC", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txt_conf.Location = new System.Drawing.Point(295, 184);
+			this.txt_conf.Name = "txt_conf";
+			this.txt_conf.Size = new System.Drawing.Size(0, 23);
+			this.txt_conf.TabIndex = 5;
+			this.txt_conf.Visible = false;
 			// 
 			// UC_MenuItem1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.Silver;
+			this.Controls.Add(this.txt_conf);
 			this.Controls.Add(this.btn_AddParamName);
 			this.Controls.Add(this.txt_paramName);
 			this.Controls.Add(this.label2);
@@ -107,5 +121,6 @@
 		private System.Windows.Forms.TextBox txt_paramName;
 		private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
 		private System.Windows.Forms.Button btn_AddParamName;
+		private System.Windows.Forms.Label txt_conf;
 	}
 }

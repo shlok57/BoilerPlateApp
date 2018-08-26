@@ -25,9 +25,34 @@ namespace Shlok.BoilerPlateApp
             InitializeComponent();
         }
 
-		private void btn_AddParamName_Click(object sender, EventArgs e)
+		private void Btn_AddParamName_Click(object sender, EventArgs e)
 		{
-			DBProvider.Function(2);
+			txt_conf.Visible = true;
+			string paramName = txt_paramName.Text;
+			if(string.IsNullOrEmpty(paramName))
+			{
+				txt_conf.Text = "Enter Name";
+			}
+			else
+			{
+				txt_conf.Text = DBProvider.StoreParamName(paramName) ? "Parameter Name Saved" : "Some Error Happened";
+			}
+
+			return;
+		}
+
+		private void Txt_paramName_TextChanged(object sender, EventArgs e)
+		{
+			if (string.IsNullOrEmpty(txt_paramName.Text))
+			{
+				btn_AddParamName.Enabled = false;
+			}
+			else
+			{
+				btn_AddParamName.Enabled = true;
+			}
+
+			txt_conf.Visible = false;
 		}
 	}
 }

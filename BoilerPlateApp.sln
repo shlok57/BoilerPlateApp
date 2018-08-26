@@ -4,11 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shlok.BoilerPlateApp", "WindowsFormsApp1\Shlok.BoilerPlateApp.csproj", "{5B0BA5AD-8108-4201-9453-EFB38A7E0DFB}"
-	ProjectSection(ProjectDependencies) = postProject
-		{C637A17F-40D4-41D8-8FB2-32165D68C310} = {C637A17F-40D4-41D8-8FB2-32165D68C310}
-	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shlok.DBProviders", "DBPrpvider\Shlok.DBProviders.csproj", "{C637A17F-40D4-41D8-8FB2-32165D68C310}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shlok.DBProviders", "DBProvider\Shlok.DBProviders.csproj", "{AC411BD7-8A4B-46DC-88AA-55AFAE363243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +17,10 @@ Global
 		{5B0BA5AD-8108-4201-9453-EFB38A7E0DFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B0BA5AD-8108-4201-9453-EFB38A7E0DFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B0BA5AD-8108-4201-9453-EFB38A7E0DFB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C637A17F-40D4-41D8-8FB2-32165D68C310}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C637A17F-40D4-41D8-8FB2-32165D68C310}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C637A17F-40D4-41D8-8FB2-32165D68C310}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C637A17F-40D4-41D8-8FB2-32165D68C310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC411BD7-8A4B-46DC-88AA-55AFAE363243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC411BD7-8A4B-46DC-88AA-55AFAE363243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC411BD7-8A4B-46DC-88AA-55AFAE363243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC411BD7-8A4B-46DC-88AA-55AFAE363243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

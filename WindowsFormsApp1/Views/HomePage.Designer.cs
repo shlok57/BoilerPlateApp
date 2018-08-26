@@ -61,7 +61,7 @@
 			this.btn_menu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_menu2.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_menu2.ForeColor = System.Drawing.Color.White;
-			this.btn_menu2.Image = global::BoilerPlateApp.Properties.Resources.if_poo_56056;
+			this.btn_menu2.Image = global::Shlok.BoilerPlateApp.Properties.Resources.if_poo_56056;
 			this.btn_menu2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_menu2.Location = new System.Drawing.Point(12, 222);
 			this.btn_menu2.Margin = new System.Windows.Forms.Padding(0);
@@ -88,7 +88,7 @@
 			this.btn_menu3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_menu3.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_menu3.ForeColor = System.Drawing.Color.White;
-			this.btn_menu3.Image = global::BoilerPlateApp.Properties.Resources.if_poo_56056;
+			this.btn_menu3.Image = global::Shlok.BoilerPlateApp.Properties.Resources.if_poo_56056;
 			this.btn_menu3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_menu3.Location = new System.Drawing.Point(9, 281);
 			this.btn_menu3.Margin = new System.Windows.Forms.Padding(0);
@@ -107,7 +107,7 @@
 			this.btn_menu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_menu1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_menu1.ForeColor = System.Drawing.Color.White;
-			this.btn_menu1.Image = global::BoilerPlateApp.Properties.Resources.if_poo_56056;
+			this.btn_menu1.Image = global::Shlok.BoilerPlateApp.Properties.Resources.if_poo_56056;
 			this.btn_menu1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_menu1.Location = new System.Drawing.Point(12, 163);
 			this.btn_menu1.Margin = new System.Windows.Forms.Padding(0);
@@ -125,7 +125,7 @@
 			this.btn_home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.btn_home.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.btn_home.ForeColor = System.Drawing.Color.White;
-			this.btn_home.Image = global::BoilerPlateApp.Properties.Resources.if_poo_56056;
+			this.btn_home.Image = global::Shlok.BoilerPlateApp.Properties.Resources.if_poo_56056;
 			this.btn_home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.btn_home.Location = new System.Drawing.Point(12, 104);
 			this.btn_home.Name = "btn_home";

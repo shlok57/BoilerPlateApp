@@ -6,7 +6,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5B0BA5AD-8108-4201-9453-EFB38A7E0DFB}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>BoilerPlateApp</RootNamespace>
+    <RootNamespace>Shlok.BoilerPlateApp</RootNamespace>
     <AssemblyName>BoilerPlateApp</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -143,12 +143,6 @@
     <None Include="Resources\if_poo_56056.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DBPrpvider\Shlok.DBProviders.csproj">
-      <Project>{c637a17f-40d4-41d8-8fb2-32165d68c310}</Project>
-      <Name>Shlok.DBProviders</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
@@ -159,6 +153,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DBProvider\Shlok.DBProviders.csproj">
+      <Project>{ac411bd7-8a4b-46dc-88aa-55afae363243}</Project>
+      <Name>Shlok.DBProviders</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
