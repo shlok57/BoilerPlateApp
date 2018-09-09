@@ -82,5 +82,11 @@
       <LastGenOutput>DBResource.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Models\Shlok.Models.csproj">
+      <Project>{a3d2438d-593b-4831-aafc-f170288a5715}</Project>
+      <Name>Shlok.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -27,7 +27,7 @@ namespace Shlok.BoilerPlateApp
 			}
 			else
 			{
-				txt_conf.Text = DBProvider.StoreParamName(paramName) ? "Parameter Name Saved" : "Some Error Happened";
+				txt_conf.Text = DBProvider.StoreParamName(paramName) != -1 ? "Parameter Name Saved" : "Some Error Happened";
 			}
 
 			return;

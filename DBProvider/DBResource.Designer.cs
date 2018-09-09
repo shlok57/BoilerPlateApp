@@ -70,6 +70,15 @@ namespace Shlok.DBProviders {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GetAllParamNames.
+        /// </summary>
+        internal static string GetAllParamNames {
+            get {
+                return ResourceManager.GetString("GetAllParamNames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GetLatestParamValues.
         /// </summary>
         internal static string GetLatestParamValues {

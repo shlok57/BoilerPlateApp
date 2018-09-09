@@ -120,6 +120,9 @@
   <data name="AddParam" xml:space="preserve">
     <value>AddParam</value>
   </data>
+  <data name="GetAllParamNames" xml:space="preserve">
+    <value>GetAllParamNames</value>
+  </data>
   <data name="GetLatestParamValues" xml:space="preserve">
     <value>GetLatestParamValues</value>
   </data>

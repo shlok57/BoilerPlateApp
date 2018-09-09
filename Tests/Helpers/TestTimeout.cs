@@ -5,8 +5,8 @@
 		// Timeout of 200 ms for Unit Tests
 		public const int Acceptable = 200;
 
-		// Timeout of 1200 ms for longer Unit Tests
-		public const int Appropriate = 1200;
+		// Timeout of 2 s for longer Unit Tests
+		public const int Appropriate = 2000;
 
 		// Timeout of 12 s for Integretion Tests
 		public const int Integretion = 12000;
