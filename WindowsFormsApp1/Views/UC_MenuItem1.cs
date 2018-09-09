@@ -1,11 +1,18 @@
 ﻿using System;
-using Shlok.DBProviders;
+using Shlok.Business;
 
 namespace Shlok.BoilerPlateApp
 {
 	public partial class UC_MenuItem1 : IUserControl
 	{
+		#region private variables
+
 		private static UC_MenuItem1 _instance = new UC_MenuItem1();
+		private ParamBL paramBL = null;
+
+		#endregion
+
+		#region public functions
 
 		public override IUserControl Instance
 		{
@@ -15,7 +22,12 @@ namespace Shlok.BoilerPlateApp
 		public UC_MenuItem1()
 		{
 			InitializeComponent();
+			paramBL = new ParamBL();
 		}
+
+		#endregion
+
+		#region private functions
 
 		private void Btn_AddParamName_Click(object sender, EventArgs e)
 		{
@@ -27,7 +39,7 @@ namespace Shlok.BoilerPlateApp
 			}
 			else
 			{
-				txt_conf.Text = DBProvider.StoreParamName(paramName) != -1 ? "Parameter Name Saved" : "Some Error Happened";
+				txt_conf.Text = paramBL.StoreParamName(paramName) != -1 ? "Parameter Name Saved" : "Some Error Happened";
 			}
 
 			return;
@@ -46,5 +58,7 @@ namespace Shlok.BoilerPlateApp
 
 			txt_conf.Visible = false;
 		}
+
+		#endregion
 	}
 }

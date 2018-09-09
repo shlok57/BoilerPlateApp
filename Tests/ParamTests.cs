@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Shlok.DBProviders;
+using Shlok.Business;
 using Shlok.Models;
 
 namespace Shlok.Tests
 {
 	[TestClass]
-	public class UnitTest1
+	public class ParamTests
 	{
 		[TestMethod]
 		[TestCategory(TestCategory.UnitTest)]
@@ -14,7 +14,8 @@ namespace Shlok.Tests
 		public void FunctionTest()
 		{
 			int value = 5;
-			Assert.AreEqual(value * value, DBProvider.Function(value));
+			ParamBL paramBL = new ParamBL();
+			Assert.AreEqual(value * value, paramBL.Function(value));
 		}
 
 		[DataTestMethod]
@@ -24,7 +25,8 @@ namespace Shlok.Tests
 		[Timeout(TestTimeout.Acceptable)]
 		public void FunctionDataTest(int value, int result)
 		{
-			Assert.AreEqual(result, DBProvider.Function(value));
+			ParamBL paramBL = new ParamBL();
+			Assert.AreEqual(result, paramBL.Function(value));
 		}
 
 		[TestMethod]
@@ -33,7 +35,8 @@ namespace Shlok.Tests
 		public void GetParamValuebyIdTest()
 		{
 			List<ParamValue> values = new List<ParamValue>();
-			values = DBProvider.GetParamValuesById(1, true);
+			ParamBL paramBL = new ParamBL();
+			values = paramBL.GetParamValuesHistoryById(1);
 			Assert.AreEqual(2, values.Count);
 			ParamValue value = values.Find(x => x.IsActive == true);
 			Assert.AreEqual(10, value.Value);
@@ -42,14 +45,14 @@ namespace Shlok.Tests
 
 		[TestMethod]
 		[TestCategory(TestCategory.UnitTest)]
-		//[Timeout(TestTimeout.Appropriate)]
+		[Timeout(TestTimeout.Appropriate)]
 		public void GetAllParamNames()
 		{
+			ParamBL paramBL = new ParamBL();
 			string paramName = "testParamName";
-			int paramId = DBProvider.StoreParamName(paramName);
-
+			int paramId = paramBL.StoreParamName(paramName);
 			List<ParamValue> values = new List<ParamValue>();
-			values = DBProvider.GetAllParamNames();
+			values = paramBL.GetAllParamNames();
 			ParamValue value = values.Find(x => x.Id == paramId);
 			Assert.AreEqual(paramName, value.Name);
 		}

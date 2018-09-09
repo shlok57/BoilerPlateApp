@@ -50,7 +50,7 @@
   <ItemGroup>
     <Compile Include="Helpers\TestCategory.cs" />
     <Compile Include="Helpers\TestTimeout.cs" />
-    <Compile Include="UnitTest1.cs" />
+    <Compile Include="ParamTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -64,6 +64,10 @@
     <ProjectReference Include="..\Models\Shlok.Models.csproj">
       <Project>{a3d2438d-593b-4831-aafc-f170288a5715}</Project>
       <Name>Shlok.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shlok.Business\Shlok.Business.csproj">
+      <Project>{9cb73ea8-94a2-4ddb-a232-baf55259bc5e}</Project>
+      <Name>Shlok.Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

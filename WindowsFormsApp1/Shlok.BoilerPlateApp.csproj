@@ -155,9 +155,13 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DBProvider\Shlok.DBProviders.csproj">
-      <Project>{ac411bd7-8a4b-46dc-88aa-55afae363243}</Project>
-      <Name>Shlok.DBProviders</Name>
+    <ProjectReference Include="..\Models\Shlok.Models.csproj">
+      <Project>{a3d2438d-593b-4831-aafc-f170288a5715}</Project>
+      <Name>Shlok.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shlok.Business\Shlok.Business.csproj">
+      <Project>{9cb73ea8-94a2-4ddb-a232-baf55259bc5e}</Project>
+      <Name>Shlok.Business</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
