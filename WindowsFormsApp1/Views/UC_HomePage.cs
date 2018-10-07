@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Shlok.BoilerPlateApp
 {
-    public partial class UC_HomePage : IUserControl
+    public partial class UC_HomePage : CustomUserControl
     {
         private static UC_HomePage _instance = new UC_HomePage();
 
-        public override IUserControl Instance
+        public override CustomUserControl Instance
         {
             get { return _instance; }
         }

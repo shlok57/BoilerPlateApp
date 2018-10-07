@@ -31,7 +31,7 @@
 			this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.btn_menu2 = new System.Windows.Forms.Button();
-			this.panel3 = new System.Windows.Forms.Panel();
+			this.sidePanel = new System.Windows.Forms.Panel();
 			this.btn_menu3 = new System.Windows.Forms.Button();
 			this.btn_menu1 = new System.Windows.Forms.Button();
 			this.btn_home = new System.Windows.Forms.Button();
@@ -44,7 +44,7 @@
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
 			this.panel1.Controls.Add(this.btn_menu2);
-			this.panel1.Controls.Add(this.panel3);
+			this.panel1.Controls.Add(this.sidePanel);
 			this.panel1.Controls.Add(this.btn_menu3);
 			this.panel1.Controls.Add(this.btn_menu1);
 			this.panel1.Controls.Add(this.btn_home);
@@ -73,13 +73,13 @@
 			this.btn_menu2.UseVisualStyleBackColor = true;
 			this.btn_menu2.Click += new System.EventHandler(this.btn_menu2_Click);
 			// 
-			// panel3
+			// sidePanel
 			// 
-			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
-			this.panel3.Location = new System.Drawing.Point(0, 104);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(12, 43);
-			this.panel3.TabIndex = 2;
+			this.sidePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+			this.sidePanel.Location = new System.Drawing.Point(0, 104);
+			this.sidePanel.Name = "sidePanel";
+			this.sidePanel.Size = new System.Drawing.Size(12, 43);
+			this.sidePanel.TabIndex = 2;
 			// 
 			// btn_menu3
 			// 
@@ -175,7 +175,7 @@
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel sidePanel;
         private System.Windows.Forms.Button btn_menu1;
         private System.Windows.Forms.Button btn_home;
         private System.Windows.Forms.Button btn_menu2;

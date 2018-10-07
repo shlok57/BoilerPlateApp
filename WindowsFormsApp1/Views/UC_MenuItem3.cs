@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace Shlok.BoilerPlateApp
 {
-    public partial class UC_MenuItem3 : IUserControl
+    public partial class UC_MenuItem3 : CustomUserControl
     {
         private static UC_MenuItem3 _instance = new UC_MenuItem3();
 
-        public override IUserControl Instance
+        public override CustomUserControl Instance
         {
             get { return _instance; }
         }

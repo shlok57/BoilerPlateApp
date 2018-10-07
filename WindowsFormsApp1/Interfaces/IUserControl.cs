@@ -1,14 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
 
 namespace Shlok.BoilerPlateApp
 {
-    public class IUserControl: UserControl
-    {
-        public virtual IUserControl Instance { get; }
-    }
+	public class CustomUserControl : UserControl
+	{
+		public virtual CustomUserControl Instance { get; }
+
+		public virtual void Load() { }
+	}
 }

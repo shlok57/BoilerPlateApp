@@ -3,7 +3,7 @@ using Shlok.Business;
 
 namespace Shlok.BoilerPlateApp
 {
-	public partial class UC_MenuItem1 : IUserControl
+	public partial class UC_MenuItem1 : CustomUserControl
 	{
 		#region private variables
 
@@ -14,7 +14,7 @@ namespace Shlok.BoilerPlateApp
 
 		#region public functions
 
-		public override IUserControl Instance
+		public override CustomUserControl Instance
 		{
 			get { return _instance; }
 		}

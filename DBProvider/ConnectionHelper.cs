@@ -5,9 +5,9 @@ namespace Shlok.DBProviders
 {
 	public class ConnectionHelper
 	{
-		private static string _connectionString;
-		private static SqlConnection _conn;
-		private static SqlCommand _cmd;
+		private string _connectionString;
+		private SqlConnection _conn;
+		private SqlCommand _cmd;
 
 		public ConnectionHelper()
 		{

@@ -21,8 +21,8 @@ namespace Shlok.Tests
 		[DataTestMethod]
 		[DataRow(5, 25)]
 		[DataRow(3, 9)]
-		[TestCategory(TestCategory.UnitTest)]
-		[Timeout(TestTimeout.Acceptable)]
+		[TestCategory(TestCategory.IntegretionTest)]
+		[Timeout(TestTimeout.Integretion)]
 		public void FunctionDataTest(int value, int result)
 		{
 			ParamBL paramBL = new ParamBL();
@@ -30,8 +30,8 @@ namespace Shlok.Tests
 		}
 
 		[TestMethod]
-		[TestCategory(TestCategory.UnitTest)]
-		[Timeout(TestTimeout.Appropriate)]
+		[TestCategory(TestCategory.IntegretionTest)]
+		[Timeout(TestTimeout.Integretion)]
 		public void GetParamValuebyIdTest()
 		{
 			List<ParamValue> values = new List<ParamValue>();
@@ -44,8 +44,8 @@ namespace Shlok.Tests
 
 
 		[TestMethod]
-		[TestCategory(TestCategory.UnitTest)]
-		[Timeout(TestTimeout.Appropriate)]
+		[TestCategory(TestCategory.IntegretionTest)]
+		[Timeout(TestTimeout.Integretion)]
 		public void GetAllParamNames()
 		{
 			ParamBL paramBL = new ParamBL();
